@@ -33,13 +33,23 @@ const questions = [
     choices: ['MIT', 'Apache', 'GNU/GPL', 'BSD', 'Creative Commons']
 }
 ];
-inquirer
-.prompt(questions)
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
-
+function writeToFile(fileName, data) {
+fs.writeFile( fileName, data, (err) => {
+    if (err){
+        console.error('Error', err);
+    } else{
+        console.log('Success!')
+    }
+})
+}
 // TODO: Create a function to initialize app
-function init() {}
+function init() {
+    inquirer.prompt(questions).then((answers) =>{
+        const READMEContent = generateMarkdown(answers);
+        writeToFile('README.md', READMEContent);
+    });
+};
 
 // Function call to initialize app
 init();
