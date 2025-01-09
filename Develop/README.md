@@ -1,15 +1,23 @@
-# Sample Project Title for Module 7
+# ReadME Generator
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)
 
+## Table of Contents
+- [Description](#description)
+- [Installation Instructions](#installation-instructions)
+- [Usage Information](#usage-information)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Test Instructions](#test-instructions)
+- [License](#license)
+
 ## Description
-This project is an example for module 7 which introduces node JS. 
+This project uses node to create quality README files.
 
 ## Installation Instructions
-Have node installed. Run <node 'index'.js in terminal.>
+Install node. Run <node index> in the terminal.
 
 ## Usage Information
-No usage information available.
+n/a
 
 ## Contribution Guidelines
 n/a
